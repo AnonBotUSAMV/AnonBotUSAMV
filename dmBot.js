@@ -61,7 +61,7 @@ dmBot.on("message", (message) => {
             .setColor("#4bcdf7")
             .setAuthor("Confession #" + new_confession_count, "https://i.ibb.co/dD3F4j2/avatars-000414568512-35e3bu-t500x500.jpg")  
             .setDescription(args)
-            .setFooter("PM me to send an anonymous message, we reserve the right to check message owner if there's an abuse.")
+            .setFooter("DM me to send a 100% anonymous message.")
             .setTimestamp()
         dmBot.guilds.cache.get(config.SERVER_ID).channels.cache.get(config.CHANNEL_ID).send(embed).catch(console.log(`Message recieved from ${userID}!(${message.author.username})`))
         dmBot.guilds.cache.get(config.SERVERLOG_ID).channels.cache.get(config.LOG_ID).send("**This Message Was Sent By: " + message.author.username + "**" + "\n" + args)
