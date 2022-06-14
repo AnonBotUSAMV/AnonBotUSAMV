@@ -56,7 +56,7 @@ dmBot.on("message", (message) => {
           
           
           
-        message.channel.send("This confession has been sent! :incoming_envelope:").then(msg => msg.delete(3000))
+        message.channel.send("This confession has been sent! :incoming_envelope:").then(message => message.delete(3000));
         var embed = new Discord.MessageEmbed()
             .setColor("#4bcdf7")
             .setAuthor("Confession #" + new_confession_count, "https://i.ibb.co/dD3F4j2/avatars-000414568512-35e3bu-t500x500.jpg")  
